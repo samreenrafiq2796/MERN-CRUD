@@ -52,10 +52,10 @@ export default function Rigester() {
 
     } catch (error) {
       if (error.status === 409) {
-        toast.error(error.data.msg)
+        toast.error(error.response.data.msg)
       }
       console.log(error)
-      toast.error(error.data.msg)
+      toast.error(error.response.data.msg)
     }
   }
   return (
