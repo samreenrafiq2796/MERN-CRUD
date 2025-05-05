@@ -30,11 +30,11 @@ export default function Rigester() {
         toast.error("All Fields Are Required");
         return;
       }
-      if (pswd_regex.test(pswd)) {
+      if (!pswd_regex.test(pswd)) {
         toast.error("Invalid Password, Password must contain 1 uppercase, 1 lower case , 1 digit and 1 special character");
         return;
       }
-      if (username_regex.test(name)) {
+      if (!username_regex.test(name)) {
         toast.error("Username should only contain alphabet");
         return;
       }
