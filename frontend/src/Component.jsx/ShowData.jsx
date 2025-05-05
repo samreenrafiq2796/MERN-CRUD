@@ -45,6 +45,7 @@ export default function ShowData() {
                             <p class="card-text">{a.email}</p>
                             <p class="card-text">{a.gender}</p>
                             <button className="btn btn-danger" onClick={()=>{console.log(a._id); delete_user(a._id)}}>Delete</button>
+                            <button className="btn btn-warning">Update</button>
                         </div>
                     </div>
                     
